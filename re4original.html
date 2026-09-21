@@ -145,25 +145,25 @@
     </main>
     <footer>
         <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                const checkboxes = document.querySelectorAll(".save-cb-state");
+                document.addEventListener("DOMContentLoaded", () => {
+                    const checkboxes = document.querySelectorAll(".save-cb-state");
 
-                // 1. Load saved states from localStorage
-                const savedStates = JSON.parse(localStorage.getItem("checkboxStates")) || {};
+                    // 1. Load saved states from localStorage
+                    const savedStates = JSON.parse(localStorage.getItem("checkboxStates")) || {};
 
-                checkboxes.forEach(cb => {
-                    if (savedStates[cb.id] !== undefined) {
-                        cb.checked = savedStates[cb.id];
-                    }
+                    checkboxes.forEach(cb => {
+                        if (savedStates[cb.id] !== undefined) {
+                            cb.checked = savedStates[cb.id];
+                        }
 
-                    // 2. Listen for changes and update localStorage
-                    cb.addEventListener("change", () => {
-                        const currentStates = JSON.parse(localStorage.getItem("checkboxStates")) || {};
-                        currentStates[cb.id] = cb.checked;
-                        localStorage.setItem("checkboxStates", JSON.stringify(currentStates));
+                        // 2. Listen for changes and update localStorage
+                        cb.addEventListener("change", () => {
+                            const currentStates = JSON.parse(localStorage.getItem("checkboxStates")) || {};
+                            currentStates[cb.id] = cb.checked;
+                            localStorage.setItem("checkboxStates", JSON.stringify(currentStates));
+                        });
                     });
                 });
-            });
         </script>
     </footer>
 </body>
