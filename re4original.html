@@ -6,7 +6,7 @@
     <title>Resident Evil 4 (2005) - BioTracker</title>
     <meta name="description" content="Resident Evil 4 (2005) Achievement Tracker">
     <meta name="author" content="𝗬𝗼𝘂𝗿 𝗡𝗮𝗺𝗲">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.11.6" />
     <link rel="icon" type="image/png" href="favicon_io/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -19,31 +19,32 @@
         <!--𝗛𝗲𝗮𝗱𝗲𝗿 𝗖𝗼𝗻𝘁𝗲𝗻𝘁 𝗛𝗲𝗿𝗲 -->
         <!--remember to copy header to each html page-->
         <nav>
-            <li>
+            <ul>
                 <a href="index.html">
                     <img src="img/D4W Logo-02.png" alt="Home" width="50" height="50">
                 </a>
-            </li>
-            <li>
+            </ul>
+            <h1>BioTracker</h1>
+            <ul>
                 <a href="rerequiem.html">
                     Resident Evil Requiem
                 </a>
-            </li>
-            <li>
+            </ul>
+            <ul>
                 <a href="revillage.html">
                     Resident Evil Village
                 </a>
-            </li>
-            <li>
+            </ul>
+            <ul>
                 <a href="re4remake.html">
                     Resident Evil 4 Remake
                 </a>
-            </li>
-            <li>
+            </ul>
+            <ul>
                 <a href="re4original.html">
                     Resident Evil 4 (2005)
                 </a>
-            </li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -55,27 +56,33 @@
         </figcaption>
         <p><em>Total Achievements: 12</em></p>
         <h2>Story:</h2>
-        <label><input type="checkbox" id="myCheckbox" name="It Begins With a Ring"> <strong>It Begins With a Ring</strong></label>
+        <label><input type="checkbox" id="myCheckbox" name="It Begins With a Ring"> <strong>It Begins With a
+                Ring</strong></label>
         <ul>
             <li>In chapter 1-1, survive the village siege (Survive 3-4 minutes or defeat 15 enemies).</li>
         </ul>
-        <label><input type="checkbox" id="myCheckbox" name="A Rock and a Hard Place"> <strong>A Rock and a Hard Place</strong></label>
+        <label><input type="checkbox" id="myCheckbox" name="A Rock and a Hard Place"> <strong>A Rock and a Hard
+                Place</strong></label>
         <ul>
             <li>Defeat El Gigante in chapter 2-1.</li>
         </ul>
-        <label><input type="checkbox" id="myCheckbox" name="Secure the Ballistics"> <strong>Secure the Ballistics</strong></label>
+        <label><input type="checkbox" id="myCheckbox" name="Secure the Ballistics"> <strong>Secure the
+                Ballistics</strong></label>
         <ul>
             <li>Find Ashley in the church during chapter 2-2.</li>
         </ul>
-        <label><input type="checkbox" id="myCheckbox" name="A Bloodline Severed"> <strong>A Bloodline Severed</strong></label>
+        <label><input type="checkbox" id="myCheckbox" name="A Bloodline Severed"> <strong>A Bloodline
+                Severed</strong></label>
         <ul>
             <li>Defeat Bitores Mendez in chapter 2-3.</li>
         </ul>
-        <label><input type="checkbox" id="myCheckbox" name="The Castellan Falls"> <strong>The Castellan Falls</strong></label>
+        <label><input type="checkbox" id="myCheckbox" name="The Castellan Falls"> <strong>The Castellan
+                Falls</strong></label>
         <ul>
             <li>Defeat Ramon Salazar in chapter 4-4.</li>
         </ul>
-        <label><input type="checkbox" id="myCheckbox" name="The Ties That Bind"> <strong>The Ties That Bind</strong></label>
+        <label><input type="checkbox" id="myCheckbox" name="The Ties That Bind"> <strong>The Ties That
+                Bind</strong></label>
         <ul>
             <li>Defeat Jack Krauser in chapter 5-3.</li>
         </ul>
@@ -84,12 +91,14 @@
             <li>Defeat Osmund Saddler in chapter 5-4.</li>
         </ul>
         <h2>Challenges:</h2>
-        <label><input type="checkbox" id="myCheckbox" name="A Terrifying Assassin"> <strong>A Terrifying Assassin</strong></label>
+        <label><input type="checkbox" id="myCheckbox" name="A Terrifying Assassin"> <strong>A Terrifying
+                Assassin</strong></label>
         <ul>
             <li>In chapter 4-1, defeat Verdugo. The easiest way is to spawn Verdugo in, freeze him with a liquid
                 nitrogen canister, and then use a rocket launcher.</li>
         </ul>
-        <label><input type="checkbox" id="myCheckbox" name="Do Not Shoot the Water"> <strong>Do Not Shoot the Water!</strong></label>
+        <label><input type="checkbox" id="myCheckbox" name="Do Not Shoot the Water"> <strong>Do Not Shoot the
+                Water!</strong></label>
         <ul>
             <li>Do shoot the water, in chapter 1-3 before the Del Lago boss fight.</li>
         </ul>
@@ -119,7 +128,8 @@
                     author.</small>
             </figcaption>
         </ul>
-        <label><input type="checkbox" id="myCheckbox" name="What Are They Worth?"> <strong>What Are They Worth?</strong></label>
+        <label><input type="checkbox" id="myCheckbox" name="What Are They Worth?"> <strong>What Are They
+                Worth?</strong></label>
         <ul>
             <li>Acquire the bottle caps in game through the Merchant's Shooting Range minigame. They can be found in
                 chapter 3-1, 4-1, 4-2, 5-1, and 5-3.</li>
@@ -132,6 +142,23 @@
         </ul>
     </main>
     <footer>
-        <!-- footer content here-->
+        <script>
+            // 1. Select the checkbox element
+            const checkbox = document.getElementById('myCheckbox');
+
+            // 2. Load the saved state from localStorage on page load
+            const savedState = localStorage.getItem('myCheckboxStatus');
+
+            // 3. Apply the saved state if it exists (convert the string back to a boolean)
+            if (savedState !== null) {
+                checkbox.checked = (savedState === 'true');
+            }
+
+            // 4. Listen for changes and update localStorage
+            checkbox.addEventListener('change', () => {
+                localStorage.setItem('myCheckboxStatus', checkbox.checked);
+            });
+
+        </script>
     </footer>
 </body>
