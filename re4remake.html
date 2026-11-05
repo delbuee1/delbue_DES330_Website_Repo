@@ -6,53 +6,60 @@
     <title>Resident Evil 4 Remake - BioTracker</title>
     <meta name="description" content="Resident Evil 4 Remake Achievement Tracker">
     <meta name="author" content="Emma Delbue">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.11.6" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="favicon_io/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Libertinus+Serif+Display&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
-                <a href="index.html">
-                    <img src="img/D4W Logo-02.png" alt="Home" width="50" height="50">
-                </a>
-            </ul>
-            <h1>BioTracker</h1>
-            <ul>
-                <a href="rerequiem.html">
-                    Resident Evil Requiem
-                </a>
-            </ul>
-            <ul>
-                <a href="revillage.html">
-                    Resident Evil Village
-                </a>
-            </ul>
-            <ul>
-                <a href="re4remake.html">
-                    Resident Evil 4 Remake
-                </a>
-            </ul>
-            <ul>
-                <a href="re4original.html">
-                    Resident Evil 4 (2005)
-                </a>
-            </ul>
+            <a href="index.html">
+                <div class="image-container">
+                    <img src="img/D4W Logo-02.png" alt="Home" width="50" height="50" title="Biotracker Home">
+                    <div class="text-overlay">BioTracker</div>
+                </div>
+            </a>
+            <a href="rerequiem.html">
+                Resident Evil Requiem
+            </a>
+            <a href="revillage.html">
+                Resident Evil Village
+            </a>
+            <a href="re4remake.html">
+                Resident Evil 4 Remake
+            </a>
+            <a href="re4original.html">
+                Resident Evil 4 (2005)
+            </a>
         </nav>
     </header>
     <main>
-        <h1>Resident Evil 4 Remake BioTracker</h1>
-        <img src="img/Re4R/key_re4r.png"
-            alt="Resident Evil 4 Remake's Leon Kennedy carrying a passed out Ashley Graham." width="600" />
+        <div class="image-welcome">
+            <img src="img/Re4R/key_re4r.png"
+                alt="Resident Evil 4 Remake's Leon Kennedy carrying a passed out Ashley Graham." width="600" />
+            <div class="text-title">
+                <h1>Resident Evil 4 Remake BioTracker</h1>
+                <div class="welcome">
+                    <p><em>Total Achievements: 46</em></p>
+                </div>
+            </div>
+        </div>
         <figcaption> <small><em>Resident Evil 4</em>. Developed and published by CAPCOM Co., Ltd., 2023. Screenshot by
                 author.</small>
         </figcaption>
-        <p><em>Total Achievements: 46</em></p>
         <h2>Story:</h2>
         <label><input type="checkbox" id="cb13" class="save-cb-state" name="Harpoon Hurler"> <strong>Harpoon
                 Hurler</strong></label>
@@ -370,26 +377,30 @@
         </ul>
     </main>
     <footer>
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                const checkboxes = document.querySelectorAll(".save-cb-state");
+        <div class="footer">
+            <p>All screenshots are derived from video games developed and published by CAPCOM Co., Ltd.
+                All screenshots have been taken by author.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const checkboxes = document.querySelectorAll(".save-cb-state");
 
-                // 1. Load saved states from localStorage
-                const savedStates = JSON.parse(localStorage.getItem("checkboxStates")) || {};
+            // 1. Load saved states from localStorage
+            const savedStates = JSON.parse(localStorage.getItem("checkboxStates")) || {};
 
-                checkboxes.forEach(cb => {
-                    if (savedStates[cb.id] !== undefined) {
-                        cb.checked = savedStates[cb.id];
-                    }
+            checkboxes.forEach(cb => {
+                if (savedStates[cb.id] !== undefined) {
+                    cb.checked = savedStates[cb.id];
+                }
 
-                    // 2. Listen for changes and update localStorage
-                    cb.addEventListener("change", () => {
-                        const currentStates = JSON.parse(localStorage.getItem("checkboxStates")) || {};
-                        currentStates[cb.id] = cb.checked;
-                        localStorage.setItem("checkboxStates", JSON.stringify(currentStates));
-                    });
+                // 2. Listen for changes and update localStorage
+                cb.addEventListener("change", () => {
+                    const currentStates = JSON.parse(localStorage.getItem("checkboxStates")) || {};
+                    currentStates[cb.id] = cb.checked;
+                    localStorage.setItem("checkboxStates", JSON.stringify(currentStates));
                 });
             });
-        </script>
-    </footer>
+        });
+    </script>
 </body>

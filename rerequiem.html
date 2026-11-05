@@ -6,55 +6,61 @@
     <title>Resident Evil Requiem - BioTracker</title>
     <meta name="description" content="Resident Evil Requiem Achievement Tracker">
     <meta name="author" content="Emma Delbue">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.11.6" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="favicon_io/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Libertinus+Serif+Display&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
-                <a href="index.html">
-                    <img src="img/D4W Logo-02.png" alt="Home" width="50" height="50">
-                </a>
-            </ul>
-            <h1>BioTracker</h1>
-            <ul>
-                <a href="rerequiem.html">
-                    Resident Evil Requiem
-                </a>
-            </ul>
-            <ul>
-                <a href="revillage.html">
-                    Resident Evil Village
-                </a>
-            </ul>
-            <ul>
-                <a href="re4remake.html">
-                    Resident Evil 4 Remake
-                </a>
-            </ul>
-            <ul>
-                <a href="re4original.html">
-                    Resident Evil 4 (2005)
-                </a>
-            </ul>
+            <a href="index.html">
+                <div class="image-container">
+                    <img src="img/D4W Logo-02.png" alt="Home" width="50" height="50" title="Biotracker Home">
+                    <div class="text-overlay">BioTracker</div>
+                </div>
+            </a>
+            <a href="rerequiem.html">
+                Resident Evil Requiem
+            </a>
+            <a href="revillage.html">
+                Resident Evil Village
+            </a>
+            <a href="re4remake.html">
+                Resident Evil 4 Remake
+            </a>
+            <a href="re4original.html">
+                Resident Evil 4 (2005)
+            </a>
         </nav>
     </header>
     <main>
-        <h1>Resident Evil Requiem BioTracker</h1>
-        <img src="img/Re9/key_rerequiem.png"
-            alt="Grace Ashcroft with her back facing the camera staring at a large mutated bioweapon called The Girl."
-            width="600" />
-        <figcaption> <small><em>Resident Evil Requiem</em>. Developed and published by CAPCOM Co., Ltd., 2026.
-                Screenshot by
-                author.</small>
+        <div class="image-welcome">
+            <img src="img/Re9/key_rerequiem.png"
+                alt="Grace Ashcroft with her back facing the camera staring at a large mutated bioweapon called The Girl."
+                width="600" />
+            <div class="text-title">
+                <h1>Resident Evil Requiem BioTracker</h1>
+                <div class="welcome">
+                    <p><em>Total Achievements: 49</em></p>
+                </div>
+            </div>
+        </div>
+        <figcaption> <small><em>Resident Evil Requiem</em>. Developed and published by CAPCOM Co., Ltd.,
+                2026. Screenshot by author.</small>
         </figcaption>
-        <p><em>Total Achievements: 49</em></p>
         <h2>Story:</h2>
         <label><input type="checkbox" id="cb115" class="save-cb-state" name="D&eacute;j&agrave; Vu">
             <strong>D&eacute;j&agrave;
@@ -62,13 +68,15 @@
         <ul>
             <li>Achieved by finishing the opening as Grace.</li>
         </ul>
-        <label><input type="checkbox" id="cb116" class="save-cb-state" name="Descent Into Darkness"> <strong>Descent
+        <label><input type="checkbox" id="cb116" class="save-cb-state" name="Descent Into Darkness">
+            <strong>Descent
                 Into
                 Darkness</strong></label>
         <ul>
             <li>Achieved by entering the Care Center's basement as Grace.</li>
         </ul>
-        <label><input type="checkbox" id="cb117" class="save-cb-state" name="It's Been a Long Night"> <strong>It's Been
+        <label><input type="checkbox" id="cb117" class="save-cb-state" name="It's Been a Long Night">
+            <strong>It's Been
                 a Long
                 Night</strong></label>
         <ul>
@@ -89,18 +97,19 @@
         <ul>
             <li>Achieved by returning to the R.P.D. as Leon.</li>
         </ul>
-        <label><input type="checkbox" id="cb121" class="save-cb-state" name="I Remember That, Too"> <strong>I Remember
-                That,
-                Too</strong></label>
+        <label><input type="checkbox" id="cb121" class="save-cb-state" name="I Remember That, Too"> <strong>I
+                Remember That, Too</strong></label>
         <ul>
             <li>Achieved by defeating the tyrant as Leon.</li>
         </ul>
-        <label><input type="checkbox" id="cb122" class="save-cb-state" name="Umbrella's Legacy"> <strong>Umbrella's
+        <label><input type="checkbox" id="cb122" class="save-cb-state" name="Umbrella's Legacy">
+            <strong>Umbrella's
                 Legacy</strong></label>
         <ul>
             <li>Achieved by arriving at ARK as Leon.</li>
         </ul>
-        <label><input type="checkbox" id="cb123" class="save-cb-state" name="The Final Mission"> <strong>The Final
+        <label><input type="checkbox" id="cb123" class="save-cb-state" name="The Final Mission"> <strong>The
+                Final
                 Mission</strong></label>
         <ul>
             <li>Achieved by exploring ARK's lower levels as Grace.</li>
@@ -116,25 +125,30 @@
         <ul>
             <li>Defeat the chef zombie in the Care Center. This can be done as Leon.</li>
         </ul>
-        <label><input type="checkbox" id="cb126" class="save-cb-state" name="Bring Out the Big Guns"> <strong>Bring Out
+        <label><input type="checkbox" id="cb126" class="save-cb-state" name="Bring Out the Big Guns">
+            <strong>Bring Out
                 the Big
                 Guns</strong></label>
         <ul>
             <li>As Grace, use Requiem to stun The Girl.</li>
         </ul>
-        <label><input type="checkbox" id="cb127" class="save-cb-state" name="Not Today, Buds!"> <strong>Not Today,
+        <label><input type="checkbox" id="cb127" class="save-cb-state" name="Not Today, Buds!"> <strong>Not
+                Today,
                 Buds!</strong></label>
         <ul>
-            <li>As Leon, defeat 9 Plant 43 seedlings. The seedlings are located in the ravine before reaching the
+            <li>As Leon, defeat 9 Plant 43 seedlings. The seedlings are located in the ravine before reaching
+                the
                 Service Entrance.</li>
             <!--Image-->
         </ul>
-        <label><input type="checkbox" id="cb128" class="save-cb-state" name="Grace and Goliath"> <strong>Grace and
+        <label><input type="checkbox" id="cb128" class="save-cb-state" name="Grace and Goliath"> <strong>Grace
+                and
                 Goliath</strong></label>
         <ul>
             <li>As Grace, defeat Chunk. Use 3 Hemolytic Injectors or 2-3 Requiem shots.</li>
         </ul>
-        <label><input type="checkbox" id="cb129" class="save-cb-state" name="Never Touch the Stuff"> <strong>Never Touch
+        <label><input type="checkbox" id="cb129" class="save-cb-state" name="Never Touch the Stuff">
+            <strong>Never Touch
                 the
                 Stuff</strong></label>
         <ul>
@@ -143,7 +157,8 @@
         <label><input type="checkbox" id="cb130" class="save-cb-state" name="Minimalist">
             <strong>Minimalist</strong></label>
         <ul>
-            <li>Complete the game without using the blood collector as Grace. Do not pick up the blood collector to
+            <li>Complete the game without using the blood collector as Grace. Do not pick up the blood collector
+                to
                 avoid using it.</li>
         </ul>
         <label><input type="checkbox" id="cb131" class="save-cb-state" name="Speed Demon"> <strong>Speed
@@ -158,7 +173,8 @@
             <li>Destroy 1 of 25 Mr. Raccoon figures. Refer to "You Little Rascal!" for more information.</li>
             <img src="img/Re9/RE9-The Hunt Begins.png"
                 alt="Leon Kennedy aiming the Requiem at a destroyed Mr. Raccoon Figure." width="600" />
-            <figcaption> <small><em>Resident Evil Requiem</em>. Developed and published by CAPCOM Co., Ltd., 2026.
+            <figcaption> <small><em>Resident Evil Requiem</em>. Developed and published by CAPCOM Co., Ltd.,
+                    2026.
                     Screenshot by
                     author.</small>
             </figcaption>
@@ -166,15 +182,19 @@
         <label><input type="checkbox" id="cb133" class="save-cb-state" name="Crate Expectations"> <strong>Crate
                 Expectations</strong></label>
         <ul>
-            <li>As Leon, open all 3 of the BSAA containers. They are located outside The Applegate Hotel, in the Central
+            <li>As Leon, open all 3 of the BSAA containers. They are located outside The Applegate Hotel, in the
+                Central
                 Camp, and away from the main area past the Gas Station.</li>
             <!--Image-->
         </ul>
-        <label><input type="checkbox" id="cb134" class="save-cb-state" name="No Safe is Safe"> <strong>No Safe is
+        <label><input type="checkbox" id="cb134" class="save-cb-state" name="No Safe is Safe"> <strong>No Safe
+                is
                 Safe</strong></label>
         <ul>
-            <li>Open all 5 safes in the game. They are located in the Bar &amp; Lounge, the Examination Room, the
-                Basement in the room before the Inspection room, the Sterilization Chamber, and in the Monitor Room.
+            <li>Open all 5 safes in the game. They are located in the Bar &amp; Lounge, the Examination Room,
+                the
+                Basement in the room before the Inspection room, the Sterilization Chamber, and in the Monitor
+                Room.
             </li>
             <!--Image-->
         </ul>
@@ -183,7 +203,8 @@
         <ul>
             <li>As Leon, craft all the craftable items.</li>
         </ul>
-        <label><input type="checkbox" id="cb136" class="save-cb-state" name="You Little Rascal!"> <strong>You Little
+        <label><input type="checkbox" id="cb136" class="save-cb-state" name="You Little Rascal!"> <strong>You
+                Little
                 Rascal!</strong></label>
         <ul>
             <li>Destroy all 25 Mr. Raccoon figures.</li>
@@ -200,23 +221,28 @@
             <li>Find and read all the files.</li>
             <!--Image-->
         </ul>
-        <label><input type="checkbox" id="cb139" class="save-cb-state" name="Curator"> <strong>Curator</strong></label>
+        <label><input type="checkbox" id="cb139" class="save-cb-state" name="Curator">
+            <strong>Curator</strong></label>
         <ul>
             <li>Unlock and view all the concept art through the Bonus Content Rewards.</li>
         </ul>
         <h2>Miscellaneous:</h2>
-        <label><input type="checkbox" id="cb140" class="save-cb-state" name="Can I Borrow This?"> <strong>Can I Borrow
+        <label><input type="checkbox" id="cb140" class="save-cb-state" name="Can I Borrow This?"> <strong>Can I
+                Borrow
                 This?</strong></label>
         <ul>
-            <li>As Leon, use a weapon an enemy dropped. This can be done during the beginning section in Wrenwood.</li>
+            <li>As Leon, use a weapon an enemy dropped. This can be done during the beginning section in
+                Wrenwood.</li>
             <img src="img/Re9/RE9-Can I Borrow This.png"
                 alt="Leon Kennedy throwing a weapon an enemy dropped towards another enemy." width="600" />
-            <figcaption> <small><em>Resident Evil Requiem</em>. Developed and published by CAPCOM Co., Ltd., 2026.
+            <figcaption> <small><em>Resident Evil Requiem</em>. Developed and published by CAPCOM Co., Ltd.,
+                    2026.
                     Screenshot by
                     author.</small>
             </figcaption>
         </ul>
-        <label><input type="checkbox" id="cb141" class="save-cb-state" name="Out of Sight, Out of Mind"> <strong>Out of
+        <label><input type="checkbox" id="cb141" class="save-cb-state" name="Out of Sight, Out of Mind">
+            <strong>Out of
                 Sight, Out of
                 Mind</strong></label>
         <ul>
@@ -225,11 +251,13 @@
         <label><input type="checkbox" id="cb142" class="save-cb-state" name="Science!">
             <strong>Science!</strong></label>
         <ul>
-            <li>In the Blood Lab as Grace, pick up the Blood Specimen (Denatured) in front of the microscope, then use
+            <li>In the Blood Lab as Grace, pick up the Blood Specimen (Denatured) in front of the microscope,
+                then use
                 the microscope to unlock a crafting recipe.</li>
             <img src="img/Re9/RE9-Science!.png"
                 alt="The microscope in the Blood Lab inspecting the Blood Specimen (Denatured)." width="600" />
-            <figcaption> <small><em>Resident Evil Requiem</em>. Developed and published by CAPCOM Co., Ltd., 2026.
+            <figcaption> <small><em>Resident Evil Requiem</em>. Developed and published by CAPCOM Co., Ltd.,
+                    2026.
                     Screenshot by
                     author.</small>
             </figcaption>
@@ -237,30 +265,37 @@
         <label><input type="checkbox" id="cb143" class="save-cb-state" name="Fatal Dose"> <strong>Fatal
                 Dose</strong></label>
         <ul>
-            <li>As Grace, pick up or craft a Hemolytic Injector, then use it on a zombie. One can be found in the
+            <li>As Grace, pick up or craft a Hemolytic Injector, then use it on a zombie. One can be found in
+                the
                 Examination Room.</li>
             <img src="img/Re9/RE9-Fatal Dose.png" alt="Grace Ashcroft injecting a zombie with a Hemolytic Injector."
                 width="600" />
-            <figcaption> <small><em>Resident Evil Requiem</em>. Developed and published by CAPCOM Co., Ltd., 2026.
+            <figcaption> <small><em>Resident Evil Requiem</em>. Developed and published by CAPCOM Co., Ltd.,
+                    2026.
                     Screenshot by
                     author.</small>
             </figcaption>
         </ul>
-        <label><input type="checkbox" id="cb144" class="save-cb-state" name="The Power of Blood"> <strong>The Power of
+        <label><input type="checkbox" id="cb144" class="save-cb-state" name="The Power of Blood"> <strong>The
+                Power of
                 Blood</strong></label>
         <ul>
             <li>As Grace, craft an item after picking up the Blood Collector from the Blood Lab.</li>
         </ul>
-        <label><input type="checkbox" id="cb145" class="save-cb-state" name="Like Mother, Like Daughter"> <strong>Like
+        <label><input type="checkbox" id="cb145" class="save-cb-state" name="Like Mother, Like Daughter">
+            <strong>Like
                 Mother, Like
                 Daughter</strong></label>
         <ul>
-            <li>As Grace, locate a lockpick (Office, Custodian's Office, or Lead Researcher's Office) and unlock a
-                simple lock (Outside Chairman's Office, near the seats outside of the Restroom, the East Wing Lobby).
+            <li>As Grace, locate a lockpick (Office, Custodian's Office, or Lead Researcher's Office) and unlock
+                a
+                simple lock (Outside Chairman's Office, near the seats outside of the Restroom, the East Wing
+                Lobby).
             </li>
             <img src="img/Re9/RE9-Like Mother, Like Daughter.png" alt="A lock being picked with a lockpick."
                 width="600" />
-            <figcaption> <small><em>Resident Evil Requiem</em>. Developed and published by CAPCOM Co., Ltd., 2026.
+            <figcaption> <small><em>Resident Evil Requiem</em>. Developed and published by CAPCOM Co., Ltd.,
+                    2026.
                     Screenshot by
                     author.</small>
             </figcaption>
@@ -268,12 +303,14 @@
         <label><input type="checkbox" id="cb146" class="save-cb-state" name="Chop Chop"> <strong>Chop
                 Chop</strong></label>
         <ul>
-            <li>As Leon, stun a zombie and use his hatchet to perform a finisher. This can be done by shooting a zombie
+            <li>As Leon, stun a zombie and use his hatchet to perform a finisher. This can be done by shooting a
+                zombie
                 until the hatchet icon appears on their head.</li>
             <img src="img/Re9/RE9-Chop Chop.png"
                 alt="Leon Kennedy standing in front of a stunned zombie. There is a hatchet icon above the zombie's head."
                 width="600" />
-            <figcaption> <small><em>Resident Evil Requiem</em>. Developed and published by CAPCOM Co., Ltd., 2026.
+            <figcaption> <small><em>Resident Evil Requiem</em>. Developed and published by CAPCOM Co., Ltd.,
+                    2026.
                     Screenshot by
                     author.</small>
             </figcaption>
@@ -281,7 +318,8 @@
         <label><input type="checkbox" id="cb147" class="save-cb-state" name="Untouchable">
             <strong>Untouchable</strong></label>
         <ul>
-            <li>As Leon, parry an enemy when they attack you. Check your settings to learn what your parry button is.
+            <li>As Leon, parry an enemy when they attack you. Check your settings to learn what your parry
+                button is.
             </li>
         </ul>
         <label><input type="checkbox" id="cb148" class="save-cb-state" name="Tailor Made"> <strong>Tailor
@@ -289,7 +327,8 @@
         <ul>
             <li>As Leon, use a supply box and credits to upgrade any weapon.</li>
         </ul>
-        <label><input type="checkbox" id="cb149" class="save-cb-state" name="Blood! More Blood!"> <strong>Blood! More
+        <label><input type="checkbox" id="cb149" class="save-cb-state" name="Blood! More Blood!"> <strong>Blood!
+                More
                 Blood!</strong></label>
         <ul>
             <li>As Grace, use the Blood Collector to collect a total of 300 microsamples of blood.</li>
@@ -309,20 +348,25 @@
         <ul>
             <li>As Leon, shoot and stun Victor when he's about to perform an attack on the highway.</li>
         </ul>
-        <label><input type="checkbox" id="cb153" class="save-cb-state" name="The Ol' Fashioned Way"> <strong>The Ol'
+        <label><input type="checkbox" id="cb153" class="save-cb-state" name="The Ol' Fashioned Way"> <strong>The
+                Ol'
                 Fashioned
                 Way</strong></label>
         <ul>
-            <li>As Grace in Standard (Classic) or Insanity difficulty, save at a typewriter using an ink ribbon.</li>
+            <li>As Grace in Standard (Classic) or Insanity difficulty, save at a typewriter using an ink ribbon.
+            </li>
         </ul>
-        <label><input type="checkbox" id="cb154" class="save-cb-state" name="Bang For Your Buck"> <strong>Bang For Your
+        <label><input type="checkbox" id="cb154" class="save-cb-state" name="Bang For Your Buck"> <strong>Bang
+                For Your
                 Buck</strong></label>
         <ul>
-            <li>Defeat 3 enemies with 1 Requiem shot. This can be attempted as Grace in the hallway outside of the
+            <li>Defeat 3 enemies with 1 Requiem shot. This can be attempted as Grace in the hallway outside of
+                the
                 Waiting Room before triggering Chunk.</li>
             <img src="img/Re9/RE9-Bang For Your Buck.png"
                 alt="Grace Ashcroft aiming Requiem down a hallway with three zombies approaching." width="600" />
-            <figcaption> <small><em>Resident Evil Requiem</em>. Developed and published by CAPCOM Co., Ltd., 2026.
+            <figcaption> <small><em>Resident Evil Requiem</em>. Developed and published by CAPCOM Co., Ltd.,
+                    2026.
                     Screenshot by
                     author.</small>
             </figcaption>
@@ -330,30 +374,38 @@
         <label><input type="checkbox" id="cb155" class="save-cb-state" name="Internal Dispute"> <strong>Internal
                 Dispute</strong></label>
         <ul>
-            <li>In the hospital wards, make a zombie attack another zombie. This can be attempted as Grace in the
-                Waiting Room. Use an empty bottle to hit the maid zombie, which will trigger the patient zombie to
+            <li>In the hospital wards, make a zombie attack another zombie. This can be attempted as Grace in
+                the
+                Waiting Room. Use an empty bottle to hit the maid zombie, which will trigger the patient zombie
+                to
                 attack.</li>
             <img src="img/Re9/RE9-Internal Dispute.png" alt="The patient zombie attacking the maid zombie."
                 width="600" />
-            <figcaption> <small><em>Resident Evil Requiem</em>. Developed and published by CAPCOM Co., Ltd., 2026.
+            <figcaption> <small><em>Resident Evil Requiem</em>. Developed and published by CAPCOM Co., Ltd.,
+                    2026.
                     Screenshot by
                     author.</small>
             </figcaption>
         </ul>
-        <label><input type="checkbox" id="cb156" class="save-cb-state" name="Credit Where Credit Is Due"> <strong>Credit
+        <label><input type="checkbox" id="cb156" class="save-cb-state" name="Credit Where Credit Is Due">
+            <strong>Credit
                 Where Credit Is
                 Due</strong></label>
         <ul>
             <li>As Leon, earn 200,000 credits through killing zombies or collecting tracking modules.</li>
         </ul>
-        <label><input type="checkbox" id="cb157" class="save-cb-state" name="Cat Got Your Tonge?"> <strong>Cat Got Your
+        <label><input type="checkbox" id="cb157" class="save-cb-state" name="Cat Got Your Tonge?"> <strong>Cat
+                Got Your
                 Tongue?</strong></label>
         <ul>
-            <li>As Leon, use the hatchet to cut the tongue off a Licker. When encountering a Licker in ARK, wait for the
-                Licker to attack with its tongue, then parry the attack. I have found that I get the Licker's tongue
+            <li>As Leon, use the hatchet to cut the tongue off a Licker. When encountering a Licker in ARK, wait
+                for the
+                Licker to attack with its tongue, then parry the attack. I have found that I get the Licker's
+                tongue
                 attack best when I am crouched at a distance. It will take many tries.</li>
             <img src="img/Re9/RE9-Cat Got Your Tongue.png" alt="Leon slicing the tongue off a Licker." width="600" />
-            <figcaption> <small><em>Resident Evil Requiem</em>. Developed and published by CAPCOM Co., Ltd., 2026.
+            <figcaption> <small><em>Resident Evil Requiem</em>. Developed and published by CAPCOM Co., Ltd.,
+                    2026.
                     Screenshot by
                     author.</small>
             </figcaption>
@@ -384,13 +436,18 @@
         <ul>
             <li>Complete the game on Standard (Classic) difficulty or higher.</li>
         </ul>
-        <label><input type="checkbox" id="cb163" class="save-cb-state" name="Remarkable Agent"> <strong>Remarkable
+        <label><input type="checkbox" id="cb163" class="save-cb-state" name="Remarkable Agent">
+            <strong>Remarkable
                 Agent</strong></label>
         <ul>
             <li>Complete the game on Insanity difficulty.</li>
         </ul>
     </main>
     <footer>
+        <div class="footer">
+            <p>All screenshots are derived from video games developed and published by CAPCOM Co., Ltd.
+                All screenshots have been taken by author.</p>
+        </div>
     </footer>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
