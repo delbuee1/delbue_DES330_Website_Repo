@@ -119,6 +119,7 @@ a:active {
     line-height: 33px;
     letter-spacing: 1.54px;
     padding: 50px 250px 100px 250px;
+
 }
 
 .image-container {
@@ -141,8 +142,18 @@ a:active {
 }
 
 .container {
-    justify-content: space-between;
+    justify-content: space-evenly;
     display: flex;
+}
+
+.save-cb-state {
+    color: var(--white, #FFF);
+    font-family: "Intel One Mono";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 1.54px;
 }
 
 .footer {
@@ -150,7 +161,7 @@ a:active {
     padding: 20px 20px 20px 20px;
     text-align: center;
     background-color: #00000080;
-    font-family: "Intel One Mono";
+    font-family: "Intel One Mono", monospace;
     font-size: 16px;
     font-style: italic;
     font-weight: 300;
@@ -162,13 +173,23 @@ a:active {
 figcaption {
     padding: 20px 20px 20px 20px;
     text-align: center;
-    font-family: "Intel One Mono";
+    font-family: "Intel One Mono", monospace;
     font-size: 16px;
     font-style: italic;
     font-weight: 300;
     line-height: 24px;
     letter-spacing: -0.16px;
     color: var(--white, #FFF);
+}
+
+.select {
+    text-align: center;
+    font-family: "Intel One Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 64px;
+    padding: 20px;
 }
 
 h1 {
@@ -186,11 +207,44 @@ h2 {
     font-weight: 700;
     font-style: normal;
     font-size: 48px;
-    padding: 20px;
+    padding: 40px 0px 0px 50px;
 }
 
 p {
     font-family: "Libertinus Serif Display", system-ui;
     font-size: 22px;
     padding: 0px 50px 0px 50px;
+}
+
+li {
+    color: var(--white, #FFF);
+    font-family: "Libertinus Serif Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.96px;
+    margin: 0px 100px 40px 100px;
+}
+
+strong {
+    color: var(--white, #FFF);
+    font-family: "Intel One Mono";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 1.54px;
+}
+
+label {
+    padding: 0px 70px 0px 90px;
+}
+
+.photo-example {
+    height: 450px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
