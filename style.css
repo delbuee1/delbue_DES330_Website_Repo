@@ -207,7 +207,7 @@ h2 {
     font-weight: 700;
     font-style: normal;
     font-size: 48px;
-    padding: 40px 0px 0px 50px;
+    padding: 40px 0px 0px 100px;
 }
 
 p {
@@ -224,7 +224,7 @@ li {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.96px;
-    margin: 0px 100px 40px 100px;
+    margin: 0px 200px 40px 200px;
 }
 
 strong {
@@ -238,7 +238,7 @@ strong {
 }
 
 label {
-    padding: 0px 70px 0px 90px;
+    padding: 0px 180px 0px 180px;
 }
 
 .photo-example {
@@ -247,4 +247,11 @@ label {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #d7bd5e;
+  cursor: pointer;
 }
