@@ -148,6 +148,7 @@ a:active {
 .container {
     justify-content: space-evenly;
     display: flex;
+    
 }
 
 .container-img {
@@ -158,6 +159,8 @@ a:active {
     padding: 10px 0px 100px 0px;
     font-family: "Libertinus Serif Display", system-ui;
     font-size: 22px;
+    flex-wrap: wrap;
+    gap:20px;
 }
 
 .box {
@@ -165,6 +168,9 @@ a:active {
     background: #450808;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) inset, 4px 8px 7.3px 2px rgba(0, 0, 0, 0.25);
     padding: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    transition: background 0.5s ease;
 }
 
 .save-cb-state {
