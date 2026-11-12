@@ -27,7 +27,7 @@ a:link {
     background-color: #450808;
     text-decoration: none;
     text-align: center;
-
+    border-radius: 27px 27px 27px 27px;
 }
 
 /* Visited link */
@@ -36,7 +36,6 @@ a:visited {
     border: 10px solid #450808;
     text-decoration: none;
     text-align: center;
-
 }
 
 /* Keyboard focus state */
@@ -46,7 +45,6 @@ a:focus {
     background-color: #d7bd5e;
     text-decoration: none;
     text-align: center;
-
 }
 
 /* Mouse hover state */
@@ -56,7 +54,6 @@ a:hover {
     background-color: #d7bd5e;
     text-decoration: none;
     text-align: center;
-
 }
 
 /* Clicking state */
@@ -67,6 +64,15 @@ a:active {
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
+    border-radius: 27px 27px 27px 27px;
+
+}
+
+.image-welcome {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), url('img/Index_Display.png') lightgray 50% / cover no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .text-welcome {
@@ -75,8 +81,7 @@ a:active {
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex-start;
-    justify-content: center;
+
     align-items: left;
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
@@ -88,6 +93,7 @@ a:active {
     font-weight: 400;
     line-height: 33px;
     letter-spacing: 1.54px;
+
 }
 
 .text-title {
@@ -119,7 +125,6 @@ a:active {
     line-height: 33px;
     letter-spacing: 1.54px;
     padding: 50px 250px 100px 250px;
-
 }
 
 .image-container {
@@ -138,12 +143,28 @@ a:active {
     width: 100%;
     height: auto;
     display: block;
-
 }
 
 .container {
     justify-content: space-evenly;
     display: flex;
+}
+
+.container-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0px 100px 0px;
+    font-family: "Libertinus Serif Display", system-ui;
+    font-size: 22px;
+}
+
+.box {
+    border-radius: 27px 27px 27px 27px;
+    background: #450808;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) inset, 4px 8px 7.3px 2px rgba(0, 0, 0, 0.25);
+    padding: 20px 0px 20px 0px;
 }
 
 .save-cb-state {
@@ -189,7 +210,14 @@ figcaption {
     font-weight: 700;
     font-style: normal;
     font-size: 64px;
-    padding: 20px;
+    padding: 80px 0px 20px 0px;
+}
+
+.logodisplay {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0px 20px 0px;
 }
 
 h1 {
@@ -250,8 +278,8 @@ label {
 }
 
 input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
-  accent-color: #d7bd5e;
-  cursor: pointer;
+    width: 18px;
+    height: 18px;
+    accent-color: #d7bd5e;
+    cursor: pointer;
 }
