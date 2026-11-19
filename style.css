@@ -97,7 +97,7 @@ a:active {
     font-family: "Libertinus Serif Display", system-ui;
     font-size: 22px;
     flex-wrap: wrap;
-    gap:20px;
+    gap: 20px;
 }
 
 .box {
@@ -108,6 +108,18 @@ a:active {
     display: flex;
     flex-direction: column;
     transition: background 0.5s ease;
+}
+
+.box-text {
+    font-family: "Libertinus Serif Display", system-ui;
+    font-size: 22px;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* NEW */
+    justify-content: center;
+    vertical-align: top;
 }
 
 .select {
@@ -126,6 +138,7 @@ a:active {
     margin-right: auto;
     padding: 20px 0px 20px 0px;
 }
+
 /* Index Only END */
 
 .image-welcome {
@@ -135,26 +148,6 @@ a:active {
     justify-content: center;
 }
 
-/* NOT REAL DELETE */
-.text-welcome {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    align-items: left;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    padding: 0px 800px 20px 20px;
-    box-sizing: border-box;
-    font-family: "Libertinus Serif Display";
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 33px;
-    letter-spacing: 1.54px;
-}
-
 /* RE Biotracker Title */
 .text-title {
     position: absolute;
@@ -162,18 +155,24 @@ a:active {
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
+    display: block;
     align-items: left;
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
-    padding: 0px 0px 20px 20px;
     box-sizing: border-box;
     font-family: "Libertinus Serif Display";
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
-    line-height: 33px;
-    letter-spacing: 1.54px;
+}
+
+.achievement-count {
+    display: block;
+    align-items: left;
+    box-sizing: border-box;
+    font-family: "Libertinus Serif Display";
+    font-size: 22px;
+    font-style: normal;
 }
 
 .image-welcome {
