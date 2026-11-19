@@ -110,6 +110,14 @@ a:active {
     transition: background 0.5s ease;
 }
 
+.photo-box {
+    border-radius: 27px 27px 27px 27px;
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    transition: background 0.5s ease;
+}
+
 .box-text {
     font-family: "Libertinus Serif Display", system-ui;
     font-size: 22px;
@@ -117,7 +125,6 @@ a:active {
     text-align: center;
     display: flex;
     flex-direction: column;
-    /* NEW */
     justify-content: center;
     vertical-align: top;
 }
@@ -139,13 +146,50 @@ a:active {
     padding: 20px 0px 20px 0px;
 }
 
-/* Index Only END */
-
-.image-welcome {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), url('img/Index_Display.png') lightgray 50% / cover no-repeat;
+.index-welcome {
+    background: url("img/Index_Display.png");
     width: 100%;
-    display: flex;
-    justify-content: center;
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    padding: 1px 0px 500px 0px;
+}
+
+/* Index Only END */
+.requiem-welcome {
+    background: url("img/Re9/key_rerequiem.png");
+    width: 100%;
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    padding: 1px 0px 500px 0px;
+}
+
+.village-welcome {
+    background: url("img/Re8/key_revillage.png");
+    width: 100%;
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    padding: 1px 0px 500px 0px;
+}
+
+.fremake-welcome {
+    background: url("img/Re4R/key_re4r.png");
+    width: 100%;
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    padding: 1px 0px 500px 0px;
+}
+
+.foriginal-welcome {
+    background: url("img/Re4OG/key_re4og.png");
+    width: 100%;
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    padding: 1px 0px 500px 0px;
 }
 
 /* RE Biotracker Title */
@@ -175,18 +219,6 @@ a:active {
     font-style: normal;
 }
 
-.image-welcome {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-}
-
-.image-welcome img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
 /* For multiple image examples */
 .container {
     justify-content: space-evenly;
@@ -194,11 +226,11 @@ a:active {
 }
 
 .photo-example {
-    height: 450px;
-    width: auto;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 .save-cb-state {
@@ -209,6 +241,7 @@ a:active {
     font-weight: 600;
     line-height: 33px;
     letter-spacing: 1.54px;
+    display: inline;
 }
 
 .footer {
@@ -271,6 +304,7 @@ li {
     line-height: 24px;
     letter-spacing: 0.96px;
     margin: 0px 200px 40px 200px;
+    display: flex;
 }
 
 strong {
